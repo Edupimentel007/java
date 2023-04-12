@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loginenquanto() {
+    var usuário;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        usuário = window.prompt('Enter a value for usuário');
+        senha = window.prompt('Enter a value for senha');
+        if (usuário == "pimen") {
+            if (senha == "1234") {
+                window.alert("OK usuário e senha corretos");
+                recorrente = false;
+            } else {
+                window.alert("Usuário ou senha inválidos");
+            }
+        }
+    }
+}
+function loginfaca() {
+    var usuário;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuário = window.prompt('Enter a value for usuário');
+        if (usuário == "pimen") {
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                window.alert("OK senha e usuário corretos");
+                recorrente = false;
+            } else {
+                window.alert("Senha ou usuários inválidos");
+            }
+        } else {
+            window.alert("Senha ou usuários incorretos");
+        }
+    } while (recorrente == true);
+}
+    
+    </script>
+    <button onclick="loginenquanto()">LOGIN</button>
+    <button onclick="loginenquanto()">ENTRAR</button>
+</body>
+</html>
