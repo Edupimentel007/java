@@ -1,0 +1,21 @@
+function main() {
+    var usuário;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuário = window.prompt('Enter a value for usuário');
+        if (usuário == "pimen") {
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                window.alert("OK senha e usuário corretos");
+                recorrente = false;
+            } else {
+                window.alert("Senha ou usuários inválidos");
+            }
+        } else {
+            window.alert("Senha ou usuários incorretos");
+        }
+    } while (recorrente == true);
+}
